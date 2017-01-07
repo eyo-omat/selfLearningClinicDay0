@@ -1,7 +1,6 @@
 'use strict';
 
 var jasmine = require('jasmine');
-var expect = jasmine.expect;
 var myApp = require('../app/library.js');
 
 (function() { 
@@ -10,7 +9,7 @@ var myApp = require('../app/library.js');
     describe('Return the min and max number in the list in a new list follows `[min, max]`', function () {
 
       it('should return [1,4] for [1, 2, 3 , 4]', function () {
-        expect(findMinMax([1, 2, 3, 4])).toEqual([1, 4]);
+        expect(myApp.findMinMax([1, 2, 3, 4])).toEqual([1, 4]);
       });
 
       it('should return [4, 6] for [6, 4]', function () {
